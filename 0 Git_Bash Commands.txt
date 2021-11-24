@@ -1,0 +1,139 @@
+open cmd ----> code . ----> open vs code
+ pwd   - print working directory (file/folder) => tells current location 
+ 
+ ls    - list => show file present in current location
+ 
+ clear -     => clear screen
+ 
+ cd    - change directory =>move to another location
+         Example - cd u:/ => move to u drive
+ 
+ mkdir - make directory   => to create folder
+         Example - mkdir "folder's name"
+ 
+ cd "folder's name" => it help to move into the folder present in current location
+         Example- cd "python tutorial" => move into python tutorial 
+ 
+ touch "filename .extension" => Help to create file inside folder
+         Example- touch Exersise.py => create file named Exersise.py
+ 
+ cd .. => Back to previous location
+ 
+ # Press Tab to autocomplete 
+ 
+ # Press upper key to automatically write pre written commands
+ 
+ rm "file name" => Use to delete/remove file
+         Example- rm Exersise.py => delete file name as Exersise.py
+ 
+ rm -rf => use to delete folder 
+         Example- rm -rf Python1 => delete folder name as Python1
+ 
+ code "file name.extension" => help to create file and open it in vs code for coding
+         Example- code hello.py 
+ 
+ python "file name.py" => help to run the progam
+         Example- python hello.py
+ 
+ mv "file1.py" "file2.py" => rename file1 to file2
+         Example- mv hello.py hyy.py => Rename hello.py to hyy.py   
+                                      
+ mv "file1.py" .. => Move file1 to previous folder (Ek folder piche)
+         Example- mv hello.py ..
+
+ mv "file1.py" ./new_folder => (move file1 from current location to new_folder)
+ 
+ mv "file1.py" /drive name/"folder name" => move file1 into anywhere   
+
+ cp "file1.py" ./new_folder/ => copy file1 to new_folder     
+
+ # How to add Github to Vs code
+
+=> git and github difference
+   Git is a version control system that lets you manage and keep track of your source code history.
+   GitHub is a cloud-based hosting service that lets you manage Git repositories.
+=> Repository -- a place or container in which something is stored in large quantities.
+
+git config --global user.name Utkarsh
+git config --global user.utkarsh97162@gmail.com 
+git config --global user.name ---- show users name on git
+git config --global user.email---- show users email on git
+
+How to initialise
+git init - it make empty Git repository
+ls -last - show hidden folder
+
+git status - show current git status
+git status -s 
+
+ Untracked | Unmodified | Modified | Staged
+Untracked  -----------Add the file  ------> Staged
+Unmodified -----------Edit the file-------> Modified
+Modified   ---------Stage the files-------> Staged
+Staged     ---------Commit ---------------> Unmodified
+Unmodified ---------Remove the file-------> Untracked
+
+git add filename  -- add any particular file to staging area Ex Git Example.py
+git commit -- commit the file 
+(in git bash i and write initial commit :wq)
+
+git add -A -- All files to staging area.
+Git commit -m "message" --> example git commit -m "first commit"
+git commit -a -m "skipped staging area and fixed"  ---- it direct add and commit
+
+#How to recover file
+git checkout filename -- match the file to last commit Example: git checkout hello.py
+git checkout -f -- match all files to last commit (pichala o save kiya hogaoh aajayega)
+git commit -a -m --skipped staging area and fixed <
+if we mistakely modify any file it will help to recover the file
+
+git log -- tell what you commit
+git log -p -5 --it shows last five commit "we can use any number"
+enter q
+git diff -- it compare working tree to staging area
+git diff --staged ---- it compare staging area to last commit
+
+git rm --cached filename -- untracked file me daldega
+.gitignore -- if we want ignore any file we can put it into it
+touch.gitignore --create gitignore file 
+Example: mylog.log -- processing....
+                      downloading....
+                      uploading....
+
+Push - Send data to server
+Pull -take data from server
+
+branch -- help to make copy of your master / main banch 
+(For example if we edit our curent website so a small error cause website down
+so we make a compy of its coe and eit it)
+
+git branch "branch name" -- we can assign anything to branch name Ex: git branch feature1
+git branch
+git checkout "branch name" -- Ex: git checkout feature1
+git checkout master -- back to master branch
+git merge feature1 --- merge master branch with feature1
+git checkout -b flask Integration
+
+How to add data in github using git-bash
+
+git commit -m "first commit"
+git branch -M main
+git remote add origin "url of you repository"
+git push -u origin main
+git push -- we can use simply this if we already add url it will push data t0 github repo.
+git remote -v -- itt show the url from where to push and where to fetch data
+
+Private Repository:
+we have to take read write access
+open github account
+setting ----> ssh & CPG keys
+generate new SSH key
+eval
+cal - show data in your folder
+clop > - copy to your clipboard
+git remote set_url origin "new url" -- it will change old url to new url
+git checkout "branch name"
+
+#fetch the data
+git clone "utl of repository" foldername -- it will make clone of you data to foldername
+

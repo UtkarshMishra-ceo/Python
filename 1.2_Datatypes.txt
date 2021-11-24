@@ -1,0 +1,22 @@
+// datatypes in python
+
+Numeric ----> int ,float, complex
+string  ----> str
+Bytes   ----> Bytes
+Boolean ----> True , False
+Data Collection ----> List , Tuples , Dictionary , Set and Frozen set
+
+//in other programming language
+Two types of Datatypes
+1- Primitive (Static Memory Allocation) -- Memory allocation takes place at compile time
+like int , float , double , char , string
+
+2- Non Primitive (Dynamic Memory Allocation) -- Memory allocation takes place at run time
+like struct , array , union , object
+
+//Python always use Dynamic Memory Allocation
+Every thing is object in python Non Primitive
+
+Mutable - Which can be modified -- list , dict , set
+Immutable -Which cannot be modified -- string , tuples ,frozen set.
+

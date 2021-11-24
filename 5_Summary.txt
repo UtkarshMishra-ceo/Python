@@ -1,0 +1,30 @@
+Chapter-1 [Summary] :-
+print() function
+Escape Sequence (/n /t /' /" /b //)
+Escape Sequence as normal text (// ///' ///" //// //n)
+Python as calculator
+Variables and how to define it
+Naming convention 
+->snake_case_writting
+->camelCaseWritting
+
+Chapter-2 [Summary] :-
+Strings
+String Indexing -> position of string 0,1,2...
+Negative String Indexing -> -1,-2,-3....
+String Slicing -> Var_name[:]
+String Slicing with argument -> Var_name[::]
+Take Two user input
+len()     function -> count length of String
+lower()   method   -> convert string into lowercase
+upper()   method   -> convert string into uppercase
+tittle()  method   -> capitalise first character in string
+count()   method   -> count any character in string
+find()    method   -> find word/char in string
+replace() method   -> replace word/char in string
+center()  method   -> string to center
+strip()   method   -> remove spaces in String
+->lstrip()
+->rstrip()
+Strings are immutable 
+-> we can't change the characters in string
